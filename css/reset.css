@@ -38,6 +38,9 @@ input::-ms-clear {
 }
 button {
 	cursor: pointer;
+	border: none;
+	background: inherit;
+	outline: none;
 }
 button::-moz-focus-inner {
 	padding: 0;
