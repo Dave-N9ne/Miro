@@ -27,6 +27,9 @@ body {
           Roboto, sans-serif;
     color: var(--text-color);
 }
+body._lock {
+    overflow: hidden;
+}
 
 .container {
     margin: 0 auto;
