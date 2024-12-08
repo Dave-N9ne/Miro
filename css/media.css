@@ -1,6 +1,63 @@
   @media (max-width: 1599.98px) {}
   @media (max-width: 1399.98px) {}
   @media (max-width: 1199.98px) {}
-  @media (max-width: 991.98px) {}
+  @media (max-width: 991.98px) {
+    /* ------HEADER------ */
+
+    .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 10;
+      border: none;
+      background-color: transparent;
+    }
+    .header__burger::before,
+    .header__burger::after,
+    .header__burger span {
+      transition: all var(--transition-properties);
+      height: 10%;
+    }
+    .header__burger::before,
+    .header__burger::after {
+      content: "";
+      position: absolute;
+      background-color: var(--title-dark-color);
+      width: 100%;
+      left: 0;
+    }
+    .header__burger::before {
+      top: 0;
+    }
+    .header__burger::after {
+      bottom: 0;
+    }
+    .header__burger span {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      background-color: var(--title-dark-color);
+      transform: scale(1) 
+                 translate(0, -50%);
+    }
+    .header__burger._active span {
+      transform: scale(0) 
+                 translate(0, -50%);
+    }
+    .header__burger._active::before {
+      top: 50%;
+      transform: rotate(-45deg) 
+                 translate(0, -50%);
+    }
+    .header__burger._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) 
+                 translate(0, 50%);
+    }
+    
+     /* ------HEADER------ */
+  }
   @media (max-width: 767.98px) {}
   @media (max-width: 575.98px) {}
