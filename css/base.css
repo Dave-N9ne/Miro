@@ -1,13 +1,8 @@
-@font-face {
-    font-family: Roboto;
-    src: local('Roboto'), 
-         url('../fonts/roboto/roboto-regular.woff2'),
-         format('woff2');
-}
-
 @import './reset.css';
 @import './vars.css';
+@import './utils.css';
 @import './header.css';
+@import './nav.css';
 @import './hero.css';
 @import './remoting.css';
 @import './integrations.css';
@@ -16,3 +11,18 @@
 @import './comments.css';
 @import './signup.css';
 @import './footer.css';
+
+@font-face {
+    font-family: Roboto;
+    src: local('Roboto'), 
+         url('../fonts/roboto/roboto-regular.woff2'),
+         format('woff2');
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font: 1.125rem / 1.33333
+          Roboto, sans-serif;
+}
