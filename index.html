@@ -18,7 +18,7 @@
                      alt="Miro's logo" 
                     >
                 </a>
-                <nav class="header__nav header-nav nav center-y">
+                <nav id="header-nav" class="header__nav header-nav nav center-y">
                     <ul class="header-nav__list center-y">
                         <li class="header-nav__item">
                             <a href="#" class="header-nav__link">
@@ -45,6 +45,15 @@
                                 Тарифы
                             </a>
                         </li>
+                        <li class="header-nav__item header-nav__item-sighup">
+                            <button href="#" class="header-nav__lang header-nav-lang">
+                                <img
+                                 class="header-nav-lang__img" 
+                                 src="./img/logo/language-logo.svg"
+                                 alt="Globe"
+                                >
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </div>         
@@ -59,13 +68,13 @@
                 <button class="header__sighup">
                     Регистрация
                 </button>
+                <button id="header-burger" class="header__burger header-burger">
+                    <span></span>
+                </button>
             </div>
-            <button class="header__burger">
-                <span></span>
-            </button>
         </div>
     </header>
-    <main class="main">
+    <main class="main none">
       <section class="info">
         <div class="container info__container">
           <picture class="info__img">
