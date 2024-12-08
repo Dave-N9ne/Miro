@@ -2,7 +2,42 @@
   @media (max-width: 1399.98px) {}
   @media (max-width: 1199.98px) {}
   @media (max-width: 991.98px) {
+
     /* ------HEADER------ */
+
+    .header__logo {
+      display: flex;
+      align-items: center;
+    }
+    .header__control {
+      gap: 60px;
+    }
+    .header__nav {
+      position: fixed;
+      display: block;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      transition: 0.4s;
+      transform: translate(0, -100%);
+      overflow: auto;
+    }
+    .header__nav-bar::before {
+      content: '';
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: transparent;
+      z-index: 8;
+    }
+    .header__nav._active {
+      top: 0;
+      transform: translate(0, 0);
+    }
     .header__burger {
       display: block;
       position: relative;
@@ -15,14 +50,14 @@
     .header__burger::before,
     .header__burger::after,
     .header__burger span {
-      transition: all var(--transition-properties);
+      transition: 0.4s;
       height: 10%;
     }
     .header__burger::before,
     .header__burger::after {
       content: "";
       position: absolute;
-      background-color: var(--title-dark-color);
+      background-color: var(--text-color);
       width: 100%;
       left: 0;
     }
@@ -37,7 +72,7 @@
       width: 100%;
       left: 0;
       top: 50%;
-      background-color: var(--title-dark-color);
+      background-color: var(--text-color);
       transform: scale(1) 
                  translate(0, -50%);
     }
@@ -55,8 +90,36 @@
       transform: rotate(45deg) 
                  translate(0, 50%);
     }
+    .header-nav__list {
+      display: block;
+      padding: 93px 20px 20px;
+    }
+    .header-nav__item {
+      margin-bottom: 14px;
+    }
     
      /* ------HEADER------ */
   }
-  @media (max-width: 767.98px) {}
-  @media (max-width: 575.98px) {}
+  @media (max-width: 767.98px) {
+    .header__control {
+      gap: 26px;
+    }
+    .header__sighup {
+      padding: 14px 22px;
+      font-size: 0.75rem;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .header .container {
+      padding: 15px;
+    }
+    .header-nav__item-sighup {
+      display: block;
+    }
+    .header__control {
+      gap: 18px;
+    }
+    .header__lang {
+      display: none;
+    }
+  }

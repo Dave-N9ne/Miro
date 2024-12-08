@@ -7,4 +7,6 @@
     text-align: center;
     color: var(--text-color);
 }
-
+.header-nav__item-sighup {
+    display: none;
+}
