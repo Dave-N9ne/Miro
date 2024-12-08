@@ -1,8 +1,8 @@
 @font-face {
     font-family: Roboto;
     src: local('Roboto'), 
-         url('../fonts/roboto/Roboto-Regular.ttf'),
-         format('ttf');
+         url('../fonts/roboto/roboto-regular.woff2'),
+         format('woff2');
 }
 
 @import './reset.css';
