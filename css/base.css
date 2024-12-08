@@ -25,6 +25,7 @@ html {
 body {
     font: 1.125rem / 1.33333
           Roboto, sans-serif;
+    color: var(--text-color);
 }
 
 .container {
