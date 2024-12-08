@@ -30,7 +30,8 @@ html, body {
 }
 
 input, button, textarea { 
-	font-family: inherit;
+	font: inherit;
+
 }
 
 input::-ms-clear {
