@@ -1,6 +1,8 @@
 @import './reset.css';
 @import './vars.css';
+@import './utils.css';
 @import './header.css';
+@import './nav.css';
 @import './hero.css';
 @import './remoting.css';
 @import './integrations.css';
@@ -23,4 +25,10 @@ html {
 body {
     font: 1.125rem / 1.33333
           Roboto, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1200px;
 }
