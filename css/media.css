@@ -153,6 +153,10 @@
   }
   @media (max-width: 575.98px) {
 
+    .container {
+      padding: 0 20px;
+    }
+
     /* ------HEADER------ */
 
     .header .container {
