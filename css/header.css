@@ -27,11 +27,9 @@
     position: relative;
     z-index: 10;
 }
-.header__sighup {
+.header__button {
     padding: 17px 26px;
-    background: var(--blue-color);
     border-radius: 24px;
-    color: #fff;
     font-size: 1rem;
     line-height: 1;
 }
