@@ -1,3 +1,30 @@
+  /* ------HOVER EFFECT------ */
+
+  @media (hover:hover) {
+    .button:hover {
+      background: #fff;
+      color: var(--blue-color);
+      transition: 0.3s ease-in-out;
+    }
+    .header-nav__link:hover {
+      text-decoration: 2px underline;
+      opacity: 0.75;
+    }
+  }
+  @media (hover:none) {
+    .header-nav__link:active {
+      text-decoration: 2px underline;
+      opacity: 0.75;
+    }
+    .button:active {
+      background: #fff;
+      color: var(--blue-color);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  /* ------/HOVER EFFECT------ */
+
   @media (max-width: 1599.98px) {}
   @media (max-width: 1399.98px) {}
   @media (max-width: 1199.98px) {}
@@ -60,7 +87,7 @@
     .header__burger::after {
       content: "";
       position: absolute;
-      background-color: var(--text-color);
+      background-color: var(--navy-color);
       width: 100%;
       left: 0;
     }
@@ -75,7 +102,7 @@
       width: 100%;
       left: 0;
       top: 50%;
-      background-color: var(--text-color);
+      background-color: var(--navy-color);
       transform: scale(1) 
                  translate(0, -50%);
     }
