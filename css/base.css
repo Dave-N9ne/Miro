@@ -39,6 +39,7 @@ body._lock {
 .button {
     background: var(--blue-color);
     color: #fff;
+    border: 1px solid var(--blue-color);
 }
 .button:not(.header__button) {
     padding: 12px;
