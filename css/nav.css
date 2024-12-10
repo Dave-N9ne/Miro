@@ -15,7 +15,7 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: var(--text-color);
+    color: var(--navy-color);
 }
 .header-nav__item-sighup {
     display: none;
