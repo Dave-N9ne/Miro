@@ -36,3 +36,11 @@ body._lock {
     padding: 0 40px;
     max-width: 1200px;
 }
+.button {
+    background: var(--blue-color);
+    color: #fff;
+}
+.button:not(.header__button) {
+    padding: 12px;
+    border-radius: 32px;
+}
