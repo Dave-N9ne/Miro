@@ -15,7 +15,7 @@
 
     /* ------BURGER------ */
 
-    .header__nav {
+    .header-nav__list {
       position: fixed;
       display: block;
       top: -100%;
@@ -27,7 +27,7 @@
       transform: translate(0, -100%);
       overflow: auto;
     }
-    .header__nav-bar::before {
+    .header__nav::before {
       content: '';
       position: fixed;
       width: 100%;
@@ -37,7 +37,7 @@
       background-color: transparent;
       z-index: 8;
     }
-    .header__nav._active {
+    .header-nav__list._active {
       top: 0;
       transform: translate(0, 0);
     }
@@ -152,7 +152,6 @@
 
   }
   @media (max-width: 575.98px) {
-
     .container {
       padding: 0 20px;
     }
@@ -176,6 +175,9 @@
 
     /* -------HERO------ */
 
+    .hero {
+      padding-top: 100px;
+    }
     .main-title {
       font-size: 1.875rem;
     }

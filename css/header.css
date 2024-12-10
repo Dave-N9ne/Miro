@@ -22,15 +22,6 @@
 .header__container {
     justify-content: space-between;
 }
-.header__nav-bar {
-    gap: 24px;
-    position: relative;
-    z-index: 10;
-}
-.header__logo {
-    position: relative;
-    z-index: 50;
-}
 .header__control {
     gap: 88px;
     position: relative;
