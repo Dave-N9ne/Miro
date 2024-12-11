@@ -7,6 +7,8 @@
 @import './remoting.css';
 @import './integrations.css';
 @import './workstyle.css';
+@import './commands.css';
+@import './tabs.css';
 @import './stats.css';
 @import './comments.css';
 @import './signup.css';
