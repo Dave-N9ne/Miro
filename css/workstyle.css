@@ -1,0 +1,11 @@
+.workstyle {
+    margin-bottom: 178px;
+}
+.workstyle__slogan {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.workstyle__desc {
+    margin-bottom: 32px;
+    max-width: 260px;
+}
