@@ -27,6 +27,9 @@
   @media (max-width: 1399.98px) {}
   @media (max-width: 1199.98px) {}
   @media (max-width: 991.98px) {
+    .h2 {
+      font-size: 2.5rem;
+    }
 
     /* ------HEADER------ */
 
@@ -145,9 +148,20 @@
 
      /* -------/HERO------ */
 
+     /* ------TABS------ */
+
+     .tabs__wrapper {
+      max-width: 550px;
+     }
+
+     /* ------/TABS------ */
+
   }
 
   @media (max-width: 767.98px) {
+    .h2 {
+      font-size: 2rem;
+    }
 
     /* ------HEADER------ */
 
@@ -175,10 +189,31 @@
 
     /* -------/HERO------ */
 
+    /* ------TABS------ */
+
+    .tabs .container {
+      padding: 0 40px;
+    }
+    .tabs__button {
+      padding: 12px 16px;
+    }
+    .tabs__content {
+      flex-flow: column;
+      gap: 50px;
+    }
+    .tabs__content > *, .workstyle__desc {
+      max-width: 100%;
+    }
+
+    /* ------/TABS------ */
+
   }
   @media (max-width: 575.98px) {
     .container {
       padding: 0 20px;
+    }
+    .h2 {
+      font-size: 1.75rem;
     }
 
     /* ------HEADER------ */
@@ -213,5 +248,26 @@
     }
 
     /* -------/HERO------ */
+
+    /* ------TABS------ */
+
+    .tabs .container {
+      padding: 0 20px;
+    }
+    .tabs__buttons {
+      margin-bottom: 32px;
+    }
+    .tabs__button {
+      padding: 10px 15px;
+      font-size: 0.75rem;
+    }
+    .tabs__content {
+      font-size: 1rem;
+    }
+    .tabs__details {
+      margin-top: 0;
+    }
+
+    /* ------/TABS------ */
 
   }
