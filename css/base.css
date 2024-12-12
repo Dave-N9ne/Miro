@@ -38,6 +38,11 @@ body._lock {
     padding: 0 40px;
     max-width: 1200px;
 }
+.h2 {
+    font-size: 3rem;
+    line-height: 1.16667;
+    letter-spacing: 0.02em;
+}
 .button {
     background: var(--blue-color);
     color: #fff;
@@ -46,4 +51,11 @@ body._lock {
 .button:not(.header__button) {
     padding: 12px;
     border-radius: 32px;
+}
+.desc_gray {
+    color: var(--desc-text-color);
+}
+.link {
+    display: inline-block;
+    color: var(--blue-color);
 }
