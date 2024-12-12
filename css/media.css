@@ -65,7 +65,7 @@
       background-color: transparent;
       z-index: 8;
     }
-    .header-nav__list._active {
+    .header-nav__list.active {
       top: 0;
       transform: translate(0, 0);
     }
@@ -107,16 +107,16 @@
       transform: scale(1) 
                  translate(0, -50%);
     }
-    .header__burger._active span {
+    .header__burger.active span {
       transform: scale(0) 
                  translate(0, -50%);
     }
-    .header__burger._active::before {
+    .header__burger.active::before {
       top: 50%;
       transform: rotate(-45deg) 
                  translate(0, -50%);
     }
-    .header__burger._active::after {
+    .header__burger.active::after {
       bottom: 50%;
       transform: rotate(45deg) 
                  translate(0, 50%);

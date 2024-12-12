@@ -6,12 +6,12 @@ function addNavMenu () {
     button.addEventListener ('click', function (event) {
         const elementsToActive = [button, nav];
         elementsToActive.forEach(toggleActiveClass);
-        body.classList.toggle('_lock');
+        body.classList.toggle('lock');
     })
 }
 
 function toggleActiveClass (element) {
-    element.classList.toggle('_active');
+    element.classList.toggle('active');
 }
 
 addNavMenu();
