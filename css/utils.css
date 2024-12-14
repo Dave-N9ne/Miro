@@ -25,14 +25,3 @@
 }
 
 /* ---------------/FLEX-ALIGH--------------- */
-
-/* ---------------GRID--------------- */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
-  gap: 25px 14px;
-}
-
-/* ---------------/GRIDS--------------- */
-
