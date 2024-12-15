@@ -50,7 +50,7 @@ body._lock {
     transition: 0.3s ease-in-out;
 }
 .button:not(.header__button) {
-    padding: 12px;
+    padding: 12px 32px;
     border-radius: 32px;
 }
 .desc_gray {
