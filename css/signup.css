@@ -1,0 +1,21 @@
+.signup {
+    color: #fff;
+}
+.signup__content {
+    padding: 188px 0;
+    background: var(--navy-color);
+    border-radius: 16px;
+    text-align: center;
+}
+.signup__title {
+    margin-bottom: 19px;
+    max-width: 660px;
+}
+.signup__desc {
+    margin-bottom: 40px;
+    max-width: 525px;
+    color: var(--light-gray-color);
+}
+.signup__desc_link.link {
+    color: inherit;
+}
