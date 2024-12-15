@@ -1,0 +1,70 @@
+.comments {
+    margin-bottom: 155px;
+}
+.comments .container {
+    padding: 0 75px;
+}
+.comments__title {
+    margin-bottom: 27px;
+    text-align: center;
+}
+.comments__button {
+    margin-bottom: 77px;
+    padding: 12px 32px;
+    display: inline-block;
+    background: #fff;
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 24px;
+}
+.comments__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 92px;
+}
+.comments__wrapper {
+    margin-bottom: 23px;
+    max-width: 193px;
+    height: 44px;
+}
+.comments__wrapper-frog {
+    max-width: 89px;
+}
+.comments__img {
+    object-fit: initial;
+}
+.comments__comment {
+    margin-bottom: 50px;
+    min-height: 216px;
+}
+.comments__user {
+    padding-left: 64px;
+    font-size: 0.875rem;
+    line-height: 1.4286;
+}
+.comments__user-jane {
+    padding-left: 55px;
+}
+.comments__user-roxanna,
+.comments__user-jane,
+.comments__user-lora {
+    position: relative;
+}
+.comments__user::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+}
+.comments__user-roxanna::before {
+    content: url(../img/logo/comments-roxanna-icon.webp);
+}
+.comments__user-jane::before {
+    content: url(../img/logo/comments-jane-icon.webp);
+    width: 39px;
+    height: 39px;
+}
+.comments__user-lora::before {
+    content: url(../img/logo/comments-lora-icon.webp);
+}
