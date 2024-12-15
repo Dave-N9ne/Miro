@@ -254,6 +254,18 @@
     }
 
     /* ------/TABS------ */
+    
+    /* ------SIGNUP------ */
+
+    .signup {
+      background: var(--navy-color);
+    }
+    .signup__content {
+      padding: 80px 0;
+      border-radius: 0;
+    }
+
+    /* ------/SIGNUP------ */
 
   }
   @media (max-width: 575.98px) {
@@ -366,5 +378,11 @@
     }
 
     /* ------/COMMENTS------ */
+
+    /* ------SIGNUP------ */
+
+
+
+    /* ------/SIGNUP------ */
 
   }
