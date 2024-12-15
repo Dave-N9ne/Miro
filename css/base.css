@@ -47,6 +47,7 @@ body._lock {
     background: var(--blue-color);
     color: #fff;
     border: 1px solid var(--blue-color);
+    transition: 0.3s ease-in-out;
 }
 .button:not(.header__button) {
     padding: 12px;
