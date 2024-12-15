@@ -4,7 +4,6 @@
     .button:hover {
       background: #fff;
       color: var(--blue-color);
-      transition: 0.3s ease-in-out;
     }
     .link:hover {
       text-decoration: 1px underline;
@@ -14,12 +13,15 @@
     .stats__link:hover {
       opacity: 0.65;
     }
+    .comments__button:hover {
+      background: var(--blue-color);
+      color: #fff;
+    }
   }
   @media (hover:none) {
     .button:active {
       background: #fff;
       color: var(--blue-color);
-      transition: 0.3s ease-in-out;
     }
     .link:active {
       text-decoration: 1px underline;
@@ -29,13 +31,27 @@
     .stats__link:active {
       opacity: 0.65;
     }
+    .comments__button:active {
+      background: var(--blue-color);
+      color: #fff;
+    }
   }
 
   /* ------/HOVER EFFECT------ */
 
   @media (max-width: 1599.98px) {}
   @media (max-width: 1399.98px) {}
-  @media (max-width: 1199.98px) {}
+  @media (max-width: 1199.98px) {
+
+    /* ------COMMENTS------ */
+
+    .comments .container {
+      padding: 0 60px;
+    }
+
+    /* ------/COMMENTS------ */
+
+  }
   @media (max-width: 991.98px) {
     .h2 {
       font-size: 2.5rem;
@@ -180,6 +196,17 @@
 
      /* ------/STATS------ */
 
+     /* ------COMMENTS------ */
+
+     .comments .container {
+        padding: 0 40px;
+     }
+     .comments__comment {
+        min-height: initial;
+     }
+
+     /* ------/COMMENTS------ */
+
   }
 
   @media (max-width: 767.98px) {
@@ -215,9 +242,6 @@
 
     /* ------TABS------ */
 
-    .tabs .container {
-      padding: 0 40px;
-    }
     .tabs__button {
       padding: 12px 16px;
     }
@@ -233,11 +257,19 @@
 
   }
   @media (max-width: 575.98px) {
-    .container {
+    body {
+      font-size: 1rem;
+    }
+    .container,
+    .tabs .container,
+    .comments .container {
       padding: 0 20px;
     }
     .h2 {
       font-size: 1.75rem;
+    }
+    .button:not(.header__button) {
+      font-size: 1rem;
     }
 
     /* ------HEADER------ */
@@ -265,9 +297,7 @@
     .main-title {
       font-size: 1.875rem;
     }
-    .hero__desc,
-    .hero-form__input,
-    .hero-form__button {
+    .hero-form__input {
       font-size: 1rem;
     }
 
@@ -314,5 +344,27 @@
     }
 
     /* ------/STATS------ */
+
+    /* ------COMMENTS------ */
+
+    .comments__button {
+      font-size: 0.875rem;
+    }
+    .comments__grid {
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      row-gap: 60px;
+    }
+    .comments__wrapper {
+      max-width: 150px;
+      height: fit-content;
+    }
+    .comments__wrapper-frog {
+      max-width: 80px;
+    }
+    .comments__comment {
+      margin-bottom: 36px;
+    }
+
+    /* ------/COMMENTS------ */
 
   }
