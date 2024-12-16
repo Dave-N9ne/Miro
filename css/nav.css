@@ -36,6 +36,7 @@
     margin-bottom: 100px;
 }
 .footer-nav__list {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
     gap: 40px 26px;
 }
