@@ -5,11 +5,11 @@
       background: #fff;
       color: var(--blue-color);
     }
+    .nav-link:hover,
     .link:hover {
       text-decoration: 1px underline;
       text-underline-offset: 4px;
     }
-    .header-nav__link:hover,
     .stats__link:hover {
       opacity: 0.65;
     }
@@ -23,11 +23,11 @@
       background: #fff;
       color: var(--blue-color);
     }
+    .nav-link:active,
     .link:active {
       text-decoration: 1px underline;
       text-underline-offset: 4px;
     }
-    .header-nav__link:active,
     .stats__link:active {
       opacity: 0.65;
     }
@@ -258,6 +258,7 @@
     /* ------SIGNUP------ */
 
     .signup {
+      margin-bottom: 0;
       background: var(--navy-color);
     }
     .signup__content {
@@ -266,6 +267,14 @@
     }
 
     /* ------/SIGNUP------ */
+
+    /* ------FOOTER------ */
+
+    .footer-links__list {
+      margin-bottom: 50px;
+    }
+
+    /* ------/FOOTER------ */
 
   }
   @media (max-width: 575.98px) {
@@ -378,11 +387,5 @@
     }
 
     /* ------/COMMENTS------ */
-
-    /* ------SIGNUP------ */
-
-
-
-    /* ------/SIGNUP------ */
 
   }
