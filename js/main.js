@@ -20,26 +20,40 @@ function TabElements(buttons, contentList) {
     this.buttons = buttons;
     this.contentList = contentList;
     this.addTabs = function() {
-        this.buttons.forEach(function(button, index) {
+        this.buttons.forEach(function (button, index) {
             button.addEventListener("click", function(event) {
-                const doesContain = event.target
-                                    .classList.contains('tabs__button');
-                const arrayOfTabLists = [
-                    contentList,
-                    buttons
-                ];
-                if (doesContain) {
-                  arrayOfTabLists.forEach(removeInnerElements);
-                }
-                const content = contentList[index];
-                const arrayOfTabElements = [
-                    content,
-                    button
-                ];
-                arrayOfTabElements.forEach(addActiveClass);
-              });
-        })
+                switchTabs(
+                    button,
+                    index,
+                    buttons,
+                    contentList
+                );
+            });
+        });
     }
+}
+
+function switchTabs(
+            button,
+            index,
+            buttons,
+            contentList,
+        ){
+    const doesContain = button
+                        .classList.contains('tabs__button');
+    const arrayOfTabLists = [
+        contentList,
+        buttons
+    ];
+    if (doesContain) {
+        arrayOfTabLists.forEach(removeInnerElements);
+    }
+    const content = contentList[index];
+    const arrayOfTabElements = [
+        content,
+        button
+    ];
+    arrayOfTabElements.forEach(addActiveClass);
 }
 
 function removeInnerElements (array) {
