@@ -6,8 +6,9 @@
 }
 .tabs__buttons {
     margin-bottom: 26px;
-    flex-flow: wrap;
     gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 .tabs__button {
     padding: 14px 18px;
