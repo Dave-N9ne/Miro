@@ -14,15 +14,15 @@ function toggleActiveClass (element) {
     element.classList.toggle('active');
 }
 
-addNavMenu();
+addNavMenu ();
 
-function TabElements(buttons, contentList) {
+function TabElements (buttons, contentList) {
     this.buttons = buttons;
     this.contentList = contentList;
-    this.addTabs = function() {
+    this.addTabs = function () {
         this.buttons.forEach(function (button, index) {
-            button.addEventListener("click", function(event) {
-                switchTabs(
+            button.addEventListener("click", function (event) {
+                switchTabs (
                     button,
                     index,
                     buttons,
@@ -33,21 +33,20 @@ function TabElements(buttons, contentList) {
     }
 }
 
-function switchTabs(
+function switchTabs (
             button,
             index,
             buttons,
             contentList,
-        ){
-    const doesContain = button
-                        .classList.contains('tabs__button');
+        ) {
     const arrayOfTabLists = [
         contentList,
         buttons
     ];
-    if (doesContain) {
-        arrayOfTabLists.forEach(removeInnerElements);
-    }
+    arrayOfTabLists.forEach(function (array) {
+        array.forEach(removeActiveClass);
+    });
+    
     const content = contentList[index];
     const arrayOfTabElements = [
         content,
@@ -56,26 +55,26 @@ function switchTabs(
     arrayOfTabElements.forEach(addActiveClass);
 }
 
-function removeInnerElements (array) {
-    array.forEach(removeActiveClass);
-}
-
-function removeActiveClass(element) {
+function removeActiveClass (element) {
     element.classList.remove('active');
 }
 
-function addActiveClass(element) {
+function addActiveClass (element) {
     element.classList.add('active');
 }
 
-function linkTabs() {
+function linkTabs () {
     const workstyleButtons = document.querySelectorAll('.workstyle__button');
     const workstyleContentList = document.querySelectorAll('.workstyle__content');
     const commandsButtons = document.querySelectorAll('.commands__button');
     const commandsContentList = document.querySelectorAll('.commands__content');
 
-    const workstyleTabs = new TabElements(workstyleButtons, workstyleContentList);
-    const commandsTabs = new TabElements(commandsButtons, commandsContentList);
+    const workstyleTabs = new TabElements (
+        workstyleButtons, workstyleContentList
+    );
+    const commandsTabs = new TabElements (
+        commandsButtons, commandsContentList
+    );
     const arrayOfTabs = [
         workstyleTabs,
         commandsTabs
@@ -85,4 +84,4 @@ function linkTabs() {
     })
 }
 
-linkTabs();
+linkTabs ();
