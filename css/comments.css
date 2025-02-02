@@ -36,7 +36,6 @@
 }
 .comments__comment {
     margin-bottom: 50px;
-    min-height: 216px;
 }
 .comments__user {
     padding-left: 64px;
