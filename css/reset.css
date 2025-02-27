@@ -14,7 +14,7 @@ a:focus, a:active {
 	outline: none;
 }
 
-nav,footer,header,aside {
+nav,footer,header,aside,input {
 	display: block;
 }
 
@@ -33,7 +33,9 @@ input, button, textarea {
 	font: inherit;
 
 }
-
+input {
+	border: none;
+}
 input::-ms-clear {
 	display:none;
 }
