@@ -16,6 +16,21 @@ function toggleActiveClass (element) {
 
 addNavMenu ();
 
+function addPopupWindow() {
+    const button = document.querySelector('#header-popup-button');
+    const popupOverlay = document.querySelector('#popup-overlay');
+    button.addEventListener('click', function(event) {
+        addActiveClass(popupOverlay);
+    })
+    popupOverlay.addEventListener('click', function(event) {
+        if (event.target === popupOverlay) {
+            removeActiveClass(popupOverlay);
+        }
+    })
+}
+
+addPopupWindow();
+
 function TabElements (buttons, contentList) {
     this.buttons = buttons;
     this.contentList = contentList;
