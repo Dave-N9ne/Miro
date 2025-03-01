@@ -310,6 +310,14 @@
 
     /* ------/HEADER------ */
 
+    /* ------POPUP------ */
+
+    .popup__button {
+      width: 100%;
+    }
+
+    /* ------/POPUP------ */
+
     /* -------HERO------ */
 
     .hero {
@@ -387,5 +395,19 @@
     }
 
     /* ------/COMMENTS------ */
-
   }
+ @media (max-width: 479.98px) {
+    /* ------POPUP------ */
+
+    .popup__form {
+      padding: 24px 28px;
+    }
+    .popup__item:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    .popup__item:last-child {
+      margin-bottom: 32px;
+    }
+
+    /* ------/POPUP------ */
+ }
