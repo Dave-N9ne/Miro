@@ -85,40 +85,50 @@
                          action="#"
                          method="post"
                          class="popup__form popup-form form">
-                            <ul class="form__items">
-                                <li class="form__item">
+                            <ul class="popup__items form__items">
+                                <li class="popup__item form__item">
                                     <label
-                                     for="" 
+                                     for="user-name" 
                                      class="form__label form-label label">
                                         Имя
                                     </label>
                                     <input
+                                     id="user-name"
                                      class="form__input form-input input" 
-                                     type="text" />
+                                     type="text"
+                                     required
+                                     minlength="2"
+                                     maxlength="16" />
                                 </li>
-                                <li class="form__item">
+                                <li class="popup__item form__item">
                                     <label
-                                     for="" 
-                                     class="form__label form-label label">
-                                        Электронная почта
-                                    </label>
-                                    <input
-                                     class="form__input form-input input" 
-                                     type="text" />
-                                </li>
-                                <li class="form__item">
-                                    <label
-                                     for="" 
+                                     for="user-password" 
                                      class="form__label form-label label">
                                         Пароль
                                     </label>
                                     <input
+                                     id="user-password"
                                      class="form__input form-input input" 
-                                     type="text" />
+                                     type="password"
+                                     required
+                                     minlength="8"
+                                     maxlength="25" />
+                                </li>
+                                <li class="popup__item form__item">
+                                    <label
+                                     for="user-email" 
+                                     class="form__label form-label label">
+                                        Электронная почта
+                                    </label>
+                                    <input
+                                     id="user-email"
+                                     class="form__input form-input input" 
+                                     type="email"
+                                     required />
                                 </li>
                             </ul>
                             <button
-                             class="form__button form-button button"
+                             class="popup__button form__button form-button button"
                              type="submit">
                                 Зарегистрироваться
                             </button>
@@ -138,8 +148,10 @@
                 <p class="hero__desc">
                     Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.
                 </p>
-                <form action="#" method="get" class="hero__form hero-form">
-                    <input type="text" class="hero-form__input">
+                <form action="#" method="post" class="hero__form hero-form">
+                    <input
+                     class="hero-form__input input"
+                     type="text" />
                     <button
                      class="hero-form__button button"
                      type="submit">
