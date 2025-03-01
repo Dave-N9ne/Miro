@@ -3,6 +3,7 @@
 @import './utils.css';
 @import './header.css';
 @import './nav.css';
+@import './popup.css';
 @import './hero.css';
 @import './remoting.css';
 @import './integrations.css';
@@ -59,4 +60,25 @@ body._lock {
 .link {
     display: inline-block;
     color: var(--blue-color);
+}
+.label {
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 1rem;
+}
+.input {
+    padding: 12px 18px;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 32px;
+}
+.input:focus {
+    border-color: var(--blue-color);
+}
+.input:user-valid {
+    border-color: #0f0;
+}
+.input:user-invalid {
+    border-color: #f00;
 }

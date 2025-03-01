@@ -22,7 +22,6 @@
 .hero__form {
     margin-bottom: 8px;
 }
-.hero-form__input,
 .hero-form__button {
     display: inline-block;
     width: 100%;
@@ -33,9 +32,6 @@
     padding: 11px;
     border: 1px solid #9b99af;
     border-radius: 32px;
-}
-.hero-form__input:focus {
-    border-color: var(--blue-color);
 }
 .hero__explanation {
     margin-bottom: 52px;
