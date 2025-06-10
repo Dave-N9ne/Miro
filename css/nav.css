@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .header-nav__list {
     gap: 34px;
 }
@@ -8,22 +7,20 @@
     line-height: 1.5;
     text-align: center;
     color: var(--text-color);
-=======
+}
 .nav-link {
     display: inline-block;
     line-height: 1.5;
 }
 .nav-link:not(.footer-nav__outer-link) {
     font-size: 1rem;
->>>>>>> dev
-=======
+}
 .nav-link {
     display: inline-block;
     line-height: 1.5;
 }
 .nav-link:not(.footer-nav__outer-link) {
     font-size: 1rem;
->>>>>>> dev
 }
 
 /* ------HEADER------ */
