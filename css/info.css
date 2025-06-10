@@ -1,0 +1,16 @@
+.info {
+    margin-bottom: 148px;
+}
+.info__container {
+    justify-content: space-between;
+    gap: 50px;
+}
+.info__text {
+    max-width: 432px;
+}
+.info__title {
+    margin-bottom: 19px;
+}
+.info__desc {
+    margin-bottom: 39px;
+}
