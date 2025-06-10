@@ -3,10 +3,13 @@
 @import './utils.css';
 @import './header.css';
 @import './nav.css';
+@import './popup.css';
 @import './hero.css';
 @import './remoting.css';
 @import './integrations.css';
 @import './workstyle.css';
+@import './commands.css';
+@import './tabs.css';
 @import './stats.css';
 @import './comments.css';
 @import './signup.css';
@@ -25,4 +28,57 @@ html {
 body {
     font: 1.125rem / 1.33333
           Roboto, sans-serif;
+    color: var(--navy-color);
+}
+body._lock {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1200px;
+}
+.h2 {
+    font-size: 3rem;
+    line-height: 1.16667;
+    letter-spacing: 0.02em;
+}
+.button {
+    background: var(--blue-color);
+    color: #fff;
+    border: 1px solid var(--blue-color);
+    transition: 0.3s ease-in-out;
+}
+.button:not(.header__button) {
+    padding: 12px 32px;
+    border-radius: 32px;
+}
+.desc_gray {
+    color: var(--desc-text-color);
+}
+.link {
+    display: inline-block;
+    color: var(--blue-color);
+}
+.label {
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 1rem;
+}
+.input {
+    padding: 12px 18px;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 32px;
+}
+.input:focus {
+    border-color: var(--blue-color);
+}
+.input:user-valid {
+    border-color: #0f0;
+}
+.input:user-invalid {
+    border-color: #f00;
 }

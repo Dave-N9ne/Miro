@@ -1,0 +1,39 @@
+.commands {
+    margin-bottom: 150px;
+}
+.commands__aims {
+    margin-bottom: 32px;
+}
+.commands__aim {
+    padding-left: 25px;
+    position: relative;
+}
+.commands__aim::before {
+    content: url(../img/logo/commands-checkmark-icon.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.commands__aim:not(:last-child) {
+    margin-bottom: 18px;
+}
+.commands__link {
+    margin-bottom: 70px;
+}
+.commands__desc {
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+}
+.commands__brands {
+    flex-flow: wrap;
+    gap: 32.5px;
+}
+/* .commands__brand { */
+    /* max-width: 26px; */
+    /* max-height: 26px; */
+/* } */
+/* .commands__img { */
+    /* max-width: inherit; */
+    /* max-height: inherit; */
+/* } */

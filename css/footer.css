@@ -1,0 +1,15 @@
+.footer {
+    background: var(--navy-color);
+    color: #fff;
+}
+.footer .container {
+    padding: 40px 20px 42px;
+}
+.footer_line {
+    margin-bottom: 70px;
+    background: #9b99af;
+    height: 1px;
+}
+.footer__download {
+    gap: 12px;
+}
