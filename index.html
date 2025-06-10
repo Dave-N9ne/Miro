@@ -4,10 +4,1391 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miro</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/media.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+        <div class="container header__container flex-x">
+            <nav class="header__nav header-nav nav center-y">
+                <a href="#" class="header__logo">
+                    <img
+                     class="header__img"
+                     src="./img/logo/Miro-logo.svg" 
+                     alt="Miro's logo" 
+                    >
+                </a>
+                <ul id="header-nav-list" class="header-nav__list center-y">
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link nav__link nav-link">
+                            Продукт
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link nav__link nav-link">
+                            Решения
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link nav__link nav-link">
+                            Ресурсы
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link nav__link nav-link">
+                            Предприятия
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link nav__link nav-link">
+                            Тарифы
+                        </a>
+                    </li>
+                    <li class="header-nav__item header-nav__item-sighup">
+                        <button href="#" class="header-nav__lang header-nav-lang">
+                            <img
+                             class="header-nav-lang__img" 
+                             src="./img/logo/language-logo.svg"
+                             alt="Globe"
+                            >
+                        </button>
+                    </li>
+                </ul>
+            </nav>       
+            <div class="header__control flex-x">
+                <button
+                 class="header__lang header-lang"
+                 type="button">
+                    <img
+                     class="header-lang__img"
+                     src="./img/logo/language-logo.svg" 
+                     alt="Globe" 
+                    >
+                </button>
+                <button
+                 id="header-popup-button"
+                 class="header__button header-popup header-popup-button button">
+                    Регистрация
+                </button>
+                <button
+                 id="header-burger" 
+                 class="header__burger header-burger"
+                 type="button">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="header__popup header-popup popup">
+            <div
+             id="popup-overlay"
+             class="popup__overlay popup-overlay center-full">
+                <form
+                 action="#"
+                 method="post"
+                 class="popup__form popup-form form">
+                    <ul class="popup__items form__items">
+                        <li class="popup__item form__item">
+                            <label
+                             for="user-name" 
+                             class="form__label form-label label">
+                                Имя
+                            </label>
+                            <input
+                             id="user-name"
+                             class="form__input form-input input" 
+                             type="text"
+                             required
+                             minlength="2"
+                             maxlength="16" />
+                        </li>
+                        <li class="popup__item form__item">
+                            <label
+                             for="user-password" 
+                             class="form__label form-label label">
+                                Пароль
+                            </label>
+                            <input
+                             id="user-password"
+                             class="form__input form-input input" 
+                             type="password"
+                             required
+                             minlength="8"
+                             maxlength="25" />
+                        </li>
+                        <li class="popup__item form__item">
+                            <label
+                             for="user-email" 
+                             class="form__label form-label label">
+                                Электронная почта
+                            </label>
+                            <input
+                             id="user-email"
+                             class="form__input form-input input" 
+                             type="email"
+                             required />
+                        </li>
+                    </ul>
+                    <button
+                     class="popup__button form__button form-button button"
+                     type="submit">
+                        Зарегистрироваться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container flex-x">
+            <div class="hero__content">
+                <h1 class="hero__title main-title">
+                    Место для командной работы
+                </h1>
+                <p class="hero__desc">
+                    Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.
+                </p>
+                <form action="#" method="post" class="hero__form hero-form">
+                    <input
+                     class="hero-form__input input"
+                     type="email" />
+                    <button
+                     class="hero-form__button button"
+                     type="submit">
+                        Начать бесплатно
+                    </button>
+                </form>
+                <span class="hero__explanation">
+                    Всегда бесплатно — кредитная карта не нужна
+                </span>
+                <ul class="hero__users flex-x">
+                    <li class="hero__item">
+                        45M+ пользователей
+                    </li>
+                    <li class="hero__item">
+                        <img
+                         class="hero__brand" 
+                         src="./img/logo/Walmart-logo.svg" 
+                         alt="">
+                    </li>
+                    <li class="hero__item">
+                        <img
+                         class="hero__brand" 
+                         src="./img/logo/cisco-logo.svg" 
+                         alt="">
+                    </li>
+                    <li class="hero__item">
+                        <img
+                         class="hero__brand" 
+                         src="./img/logo/deloitte-logo.svg" 
+                         alt="">
+                    </li>
+                    <li class="hero__item">
+                        <img
+                         class="hero__brand" 
+                         src="./img/logo/volvo-logo.svg" 
+                         alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__wrapper">
+                <img
+                 class="hero__img" 
+                 src="./img/hero-miro-interface.webp" 
+                 alt="">
+            </div>
+        </div>
+      </section>
+      <section class="creation info">
+        <div class="container creation__container info__container flex-x">
+            <div class="creation__text info__text">
+                <h2 class="creation__title info__title h2">Работайте вместе, где бы вы ни находились</h2>
+                <div class="creation__desc info__desc">
+                    Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать и совместно заниматься творчеством в одном пространстве, из любой точки мира.
+                </div>
+                <a href="/" class="creation__link info__link link">Узнать больше</a>
+            </div>
+            <picture class="creation__img info__img">
+                <img
+                 src="./img/info-gadgets.png" 
+                 alt="gadgets"
+                />
+            </picture>
+        </div>
+      </section>
+      <section class="apps info">
+        <div class="container info__container apps__container flex-x">
+          <picture class="apps__img info__img">
+            <img
+             src="./img/info-laptop.png" 
+             alt="notebook" 
+            />
+          </picture>
+          <div class="apps__text info__text">
+            <h2 class="apps__title info__title h2">Закройте лишние вкладки — всё уже здесь</h2>
+            <div class="apps__desc info__desc">
+                Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom, Miro предлагает более 100 интеграций с уже известными и полюбившимися вам инструментами.
+            </div>
+            <a href="/" class="apps__link info__link link">Узнать больше</a>
+          </div>
+        </div>
+      </section>
+      <section class="workstyle tabs">
+        <div class="container workstyle__container tabs__container">
+            <h2 class="workstyle__title tabs__title h2">
+                Подходит для вашего стиля работы
+            </h2>
+            <ul class="workstyle__buttons tabs__buttons flex-x">
+                <li class="workstyle__item tabs__item">
+                    <button
+                        class="workstyle__button tabs__button active" 
+                        type="button">
+                        Мозговые штурмы
+                    </button>
+                </li>
+                <li class="workstyle__item tabs__item">
+                    <button
+                        class="workstyle__button tabs__button" 
+                        type="button">
+                        Диаграммы
+                    </button>
+                </li>
+                <li class="workstyle__item tabs__item">
+                    <button
+                        class="workstyle__button tabs__button" 
+                        type="button">
+                        Встречи
+                    </button>
+                </li>
+                <li class="workstyle__item tabs__item">
+                    <button
+                        lang="en"
+                        class="workstyle__button tabs__button" 
+                        type="button">
+                        SCRUM
+                    </button>
+                </li>
+                <li class="workstyle__item tabs__item">
+                    <button
+                        class="workstyle__button tabs__button" 
+                        type="button">
+                        Картирование
+                    </button>
+                </li>
+                <li class="workstyle__item tabs__item">
+                    <button
+                        class="workstyle__button tabs__button" 
+                        type="button">
+                        Дизайн-исследования
+                    </button>
+                </li>
+                <li class="workstyle__item tabs__item">
+                    <button
+                        class="workstyle__button tabs__button" 
+                        type="button">
+                        Планирование
+                    </button>
+                </li>
+            </ul>
+            <div class="workstyle__body tabs__body">
+                <article class="workstyle__content tabs__content active">
+                    <div class="workstyle__details tabs__details">
+                        <span class="workstyle__slogan">Мозговые штурмы</span>
+                        <p class="workstyle__desc">
+                            Генерируйте творческие идеи и развивайте их с помощью стикеров, изображений, интеллект-карт, видео, рисования и не только.
+                        </p>
+                        <a href="#" 
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+                <article class="workstyle__content tabs__content">
+                    <div class="workstyle__details tabs__details">
+                        <span class="workstyle__slogan">Диаграммы</span>
+                        <p class="workstyle__desc">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свой точках великий ты заманивший имени рот повстречался! Моей имеет предупредила переписывается послушавшись если составитель lorem его переулка рукописи всеми.
+                        </p>
+                        <a href="#"
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface-inverted.webp"
+                         alt="Blur inverted interface">
+                    </div>
+                </article>
+                <article class="workstyle__content tabs__content">
+                    <div class="workstyle__details tabs__details">
+                        <span class="workstyle__slogan">Встречи</span>
+                        <p class="workstyle__desc">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Залетают вдали ему пунктуация дорогу дороге, домах живет семантика своего выйти даль, возвращайся журчит правилами заглавных точках сбить сих послушавшись?
+                        </p>
+                        <a href="#" 
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+                <article class="workstyle__content tabs__content">
+                    <div class="workstyle__details tabs__details">
+                        <span lang="en" class="workstyle__slogan">
+                            SCRUM
+                        </span>
+                        <p class="workstyle__desc">
+                            Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. До о единственное реторический однажды ipsum журчит семантика страну, которой снова своих! Великий языкового рыбного семантика щеке необходимыми залетают рыбными.
+                        </p>
+                        <a href="#" 
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface-inverted.webp"
+                         alt="Blur inverted interface">
+                    </div>
+                </article>
+                <article class="workstyle__content tabs__content">
+                    <div class="workstyle__details tabs__details">
+                        <span class="workstyle__slogan">Картирование</span>
+                        <p class="workstyle__desc">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Однажды своих подпоясал приставка большой рот правилами злых грустный власти. Свой ручеек текст агентство взгляд строчка, его приставка обеспечивает правилами.
+                        </p>
+                        <a href="#" 
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+                <article class="workstyle__content tabs__content">
+                    <div class="workstyle__details tabs__details">
+                        <span class="workstyle__slogan">Дизайн-исследования</span>
+                        <p class="workstyle__desc">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Буквоград дороге языком своих текст эта первую грустный запятой напоивший предложения, необходимыми коварный все пояс. Свой однажды реторический рыбного ведущими?
+                        </p>
+                        <a href="#" 
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface-inverted.webp"
+                         alt="Blur inverted interface">
+                    </div>
+                </article>
+                <article class="workstyle__content tabs__content">
+                    <div class="workstyle__details tabs__details">
+                        <span class="workstyle__slogan">Планирование</span>
+                        <p class="workstyle__desc">
+                            Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Буквоград ты, толку своих переписали текстов курсивных алфавит рекламных сих моей себя запятых своего что речью текст продолжил. Переписали, последний.
+                        </p>
+                        <a href="#" 
+                           class="workstyle__link link">
+                           Узнать больше
+                        </a>
+                    </div>
+                    <div class="workstyle__wrapper tabs__wrapper">
+                        <img
+                         class="workspace__img tabs__img" 
+                         src="./img/workstyle-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+            </div>
+        </div>
+      </section>
+      <section class="commands tabs">
+        <div class="container commands__container tabs__container">
+            <h2 class="commands__title tabs__title h2">
+                Создан для всех типов команд
+            </h2>
+            <ul class="commands__buttons tabs__buttons flex-x">
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button active"
+                        type="button">
+                            UX и дизайн
+                    </button>
+                </li>
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button"
+                        type="button">
+                        Маркетинг
+                    </button>
+                </li>
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button"
+                        type="button">
+                        Управление продуктом
+                    </button>
+                </li>
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button"
+                        type="button">
+                        Разработка
+                    </button>
+                </li>
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button"
+                        type="button">
+                        Консалтинг
+                    </button>
+                </li>
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button"
+                        type="button">
+                        Agile-коучинг
+                    </button>
+                </li>
+                <li class="commands__item tabs__item">
+                    <button 
+                        class="commands__button tabs__button"
+                        type="button">
+                        Продажи
+                    </button>
+                </li>
+            </ul>
+            <div class="commands__body tabs__body">
+                <article class="commands__content tabs__content active">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Создавайте вайрфреймы
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Подключайте заказчиков к процессу дизайна
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Проводите вовлекающие дизайн-воркшопы
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Интегрируйте ваши любимые инструменты
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+                <article class="commands__content tabs__content">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Создавайте рекламу
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Подключайте заказчиков к просмотру
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Проводите вовлекающие рекламы
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Далеко-далеко за словесными горами в стране гласных и согласных.
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface-inverted.webp" 
+                         alt="Blur inverted interface">
+                    </div>
+                </article>
+                <article class="commands__content tabs__content">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Управляйте продуктом
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Подключайте заказчиков к управлению
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Далеко-далеко за словесными горами в стране гласных.
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+                <article class="commands__content tabs__content">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Разрабатывайте
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Подключайте заказчиков к разработке
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Усовершенствуйтесь
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Проводите вовлекающее время
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты.
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface-inverted.webp" 
+                         alt="Blur inverted interface">
+                    </div>
+                </article>
+                <article class="commands__content tabs__content">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Проконсультируйтесь
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Активничайте на консультации
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Проводите вовлекающее время
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Усовершенствуйте разработку
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут.
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>
+                <article class="commands__content tabs__content">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Обучайтесь
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Подключайтесь к учебе
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Проводите вовлекающие время на учебе
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Усовершенствуйтесь
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Учите
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Далеко-далеко за словесными горами в стране.
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface-inverted.webp" 
+                         alt="Blur inverted interface">
+                    </div>
+                </article>
+                <article class="commands__content tabs__content">
+                    <div class="commands__details tabs__details">
+                        <ul class="commands__aims">
+                            <li class="commands__aim desc_gray">
+                                Продавайте
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Подключайтесь к продаже
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Проводите вовлекающие время на шопинге
+                            </li>
+                            <li class="commands__aim desc_gray">
+                                Усовершенствуйтесь
+                            </li>
+                        </ul>
+                        <a href="#" 
+                           class="commands__link link">
+                           Узнать больше
+                        </a>
+                        <p class="commands__desc desc_gray">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные.
+                        </p>
+                        <ul class="commands__brands flex-x">
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-diamond-logo.svg" 
+                                 alt="Diamond">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-xd-logo.svg" 
+                                 alt="XD's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-figma-logo.svg" 
+                                 alt="Figma's logo">
+                            </li>
+                            <li class="command__brand">
+                                <img
+                                 class="command__logo" 
+                                 src="./img/logo/commands-notion-logo.svg" 
+                                 alt="Notion's logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commands__wrapper tabs__wrapper">
+                        <img
+                         class="commands__img tabs__img" 
+                         src="./img/commands-tabs-interface.webp" 
+                         alt="Interface">
+                    </div>
+                </article>                                                                                                                                                                                                                                                                                                                                                                                                                               
+            </div>
+        </div>
+      </section>
+      <section class="stats">
+        <div class="container stats__container">
+            <h2 class="stats__title h2">
+                Почему и крупные, и небольшие компании доверяют <span lang="en">Miro</span>
+            </h2>
+            <a href="#" class="stats__link link">
+                Связаться с отделом продаж
+            </a>
+            <ul class="stats__list stats__grid grid">
+                <li class="stats__grid-element flex-y center-y">
+                    <div class="stats__wrapper">
+                        <img
+                         class="stats__img" 
+                         src="./img/logo/stats-ISO-icon.svg" 
+                         alt="ISO's icon">
+                    </div>
+                    <p class="stats__desc">
+                       <span lang="en">Miro</span> cоответствует требованиям безопасности корпоративного уровня, согласно стандарту <span lang="en">ISO-27001</span>
+                    </p>
+                </li>
+                <li class="stats__grid-element flex-y center-y">
+                    <div class="stats__wrapper">
+                        <img
+                         class="stats__img" 
+                         src="./img/logo/stats-number-1-icon.svg" 
+                         alt="#1">
+                    </div>
+                    <p class="stats__desc">
+                        Платформа номер 1 для совместной работы, согласно отзывам на <span lang="en">G2</span>
+                    </p>
+                </li>
+                <li class="stats__grid-element flex-y center-y">
+                    <div class="stats__wrapper">
+                        <img
+                         class="stats__img" 
+                         src="./img/logo/stats-99%-icon.svg" 
+                         alt="99%">
+                    </div>
+                    <p class="stats__desc">
+                        Почти все компании из списка <span lang="en">Fortune</span> 100 используют <span lang="en">Miro</span>
+                    </p>
+                </li>
+                <li class="stats__grid-element flex-y center-y">
+                    <div class="stats__wrapper">
+                        <img
+                         class="stats__img" 
+                         src="./img/logo/stats-1000+-icon.svg" 
+                         alt="1000+">
+                    </div>
+                    <p class="stats__desc">
+                        Шаблонов, созданных сообществом и экспертами
+                    </p>
+                </li>
+                <li class="stats__grid-element flex-y center-y">
+                    <div class="stats__wrapper">
+                        <img
+                         class="stats__img" 
+                         src="./img/logo/stats-45m+-icon.svg" 
+                         alt="45 million">
+                    </div>
+                    <p class="stats__desc">
+                        Пользователей во всём мире
+                    </p>
+                </li>
+                <li class="stats__grid-element flex-y center-y">
+                    <div class="stats__wrapper">
+                        <img
+                         class="stats__img" 
+                         src="./img/logo/stats-100+-icon.svg" 
+                         alt="100+">
+                    </div>
+                    <p class="stats__desc">
+                        Интеграций с различными онлайн-сервисами и инструментами
+                    </p>
+                </li>
+            </ul>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="container comments__container flex-y center-y">
+            <h2 class="comments__title h2">
+                Нравится лучшим командам мира
+            </h2>
+            <a href="#" class="comments__button">
+                Все истории клиентов
+            </a>
+            <ul class="comments__list comments__grid">
+                <li class="comments__grid-element">
+                    <div class="comments__wrapper">
+                        <img
+                         class="comments__img" 
+                         src="./img/logo/comments-vmware-icon.svg" 
+                         alt="vmware's logo">
+                    </div>
+                    <p class="comments__comment desc_gray">
+                        «Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался идеальным инструментом для совместной работы в удаленном режиме».
+                    </p>
+                    <div class="comments__user desc_gray comments__user-roxanna">
+                        <span class="comments__name">
+                            Роксанна Мустафа
+                        </span>
+                        <br>
+                        <span
+                            lang="en" 
+                            class="comments__professtion">
+                            Design Team Lead в VMware
+                        </span>
+                    </div>
+                </li>
+                <li class="comments__grid-element">
+                    <div class="comments__wrapper">
+                        <img
+                         class="comments__img" 
+                         src="./img/logo/comments-docusign-icon.svg" 
+                         alt="DocuSign's logo">
+                    </div>
+                    <p class="comments__comment desc_gray">
+                        «Miro помогает решить проблему, связанную с основным пробелом в проектировании изделий: позволяет управлять задачами с участием проектировщиков изделий, проекты которых реализуются с помощью разных инструментов.»
+                    </p>
+                    <div class="comments__user desc_gray comments__user-jane">
+                        <span class="comments__name">
+                            Джейн Эшли
+                        </span>
+                        <br>
+                        <span class="comments__professtion">
+                            Директор по проектированию <span lang="en">DocuSign</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="comments__grid-element">
+                    <div class="comments__wrapper comments__wrapper-frog">
+                        <img
+                         class="comments__img" 
+                         src="./img/logo/comments-frog-icon.svg" 
+                         alt="frog's logo">
+                    </div>
+                    <p class="comments__comment desc_gray">
+                        «Когда мы начали использовать Miro, скептицизм сменился верой в инновации, теперь у нас есть инструмент, который лежит в основе любой работы, и мы продолжим использовать его и в будущем».
+                    </p>
+                    <div class="comments__user desc_gray comments__user-lora">
+                        <span class="comments__name">
+                            Лора Бейрд
+                        </span>
+                        <br>
+                        <span 
+                            lang="en" 
+                            class="comments__professtion">
+                            Associate Design Director в frog
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+      <section class="signup">
+        <div class="container signup__container">
+            <article class="signup__content flex-y center-y">
+                <h2 class="signup__title h2">
+                    Присоединяйтесь к 45M миллионам пользователей уже сегодня
+                </h2>
+                <p class="signup__desc">
+                    Начните бесплатно и перейдите на другой тариф в любое время. Хотите стать корпоративным клиентом?
+                    <br>
+                    <a href="#" class="signup__desc_link link">
+                        Свяжитесь с отделом продаж
+                    </a>
+                </p>
+                <button 
+                    class="signup__button button" 
+                    type="button">
+                    Зарегистрироваться
+                </button>
+            </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer__nav footer-nav nav">
+                <ul class="footer-nav__list footer-nav-list nav-list grid">
+                    <li class="footer-nav__item nav-item">
+                        <a href="#" class="footer-nav__link nav__link nav-link footer-nav__outer-link">
+                            Продукт
+                        </a>
+                        <ul class="footer-nav__inner-list nav-list">
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    О продукте
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Приложения и интеграции
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Шаблоны
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a
+                                    lang="en" 
+                                    href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Miroverse
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Платформа Разработчика <span lang="en">Miro</span>
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    <span lang="en">Miro</span> для устройств
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Безопасность и соответствие
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Доступность
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Журнал изменений
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__item nav-item">
+                        <a href="#" class="footer-nav__link nav__link nav-link footer-nav__outer-link">
+                            Решения
+                        </a>
+                        <ul class="footer-nav__inner-list nav-list">
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Встречи и воркшопы
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Мозговой штурм
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    <span lang="en">Agile</span> методы в работе
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Диаграмминг
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Исследование
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Стратегия и планирование
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Интеллект-карты
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Концептуальные карты
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Онлайн-стикеры
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Блок-схемы
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Вайрфреймы
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__item nav-item">
+                        <a href="#" class="footer-nav__link nav__link nav-link footer-nav__outer-link">
+                            Ресурсы
+                        </a>
+                        <ul class="footer-nav__inner-list nav-list">
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Академия <span lang="en">Miro</span>
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Служба поддержки
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Статус
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Cообщество <span lang="en">Miro</span>
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a lang="en" 
+                                   href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Miro Professional Network
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    <span lang="en">Miro</span> Эксперты
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Мероприятия <span lang="en">Miro</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__item nav-item">
+                        <a href="#" class="footer-nav__link nav__link nav-link footer-nav__outer-link">
+                            Компания
+                        </a>
+                        <ul class="footer-nav__inner-list nav-list">
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Карьера 🚀
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    <span lang="en">Miro</span> в новостях
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Истории клиентов
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__item nav-item">
+                        <a href="#" class="footer-nav__link nav__link nav-link footer-nav__outer-link">
+                            Тарифы и планы
+                        </a>
+                        <ul class="footer-nav__inner-list nav-list">
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Тарифы
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Бизнес
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Предприятия
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Консультанты
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Образование
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Стартапы
+                                </a>
+                            </li>
+                            <li class="footer-nav__inner-item nav-item">
+                                <a href="#" class="footer-nav__inner-link footer-nav__link nav-link">
+                                    Некоммерческие организации
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer_line"></div>
+            <nav class="footer__nav-links footer-nav-links footer-links footer-nav nav">
+                <ul class="footer-links__list flex-x">
+                    <li class="footer-links__item">
+                        <ul class="footer-links__socials flex-x">
+                            <li class="footer-links__social">
+                                <a href="#" class="footer-links__logo">
+                                    <img
+                                     class="footer-links__img" 
+                                     src="./img/logo/Twitter-logo.svg" 
+                                     alt="Twitter's logo">
+                                </a>
+                            </li>
+                            <li class="footer-links__social">
+                                <a href="#" class="footer-links__logo">
+                                    <img
+                                     class="footer-links__img" 
+                                     src="./img/logo/F____ook-logo.svg" 
+                                     alt="F****ook's logo">
+                                </a>
+                            </li>
+                            <li class="footer-links__social">
+                                <a href="#" class="footer-links__logo">
+                                    <img
+                                     class="footer-links__img"
+                                     src="./img/logo/Linkedin-logo.svg" 
+                                     alt="LinkedIn's logo">
+                                </a>
+                            </li>
+                            <li class="footer-links__social">
+                                <a href="#" class="footer-links__logo">
+                                    <img
+                                     class="footer-links__img"
+                                     src="./img/logo/I___gram-logo.svg" 
+                                     alt="I****gram's logo">
+                                </a>
+                            </li>
+                            <li class="footer-links__social">
+                                <a href="#" class="footer-links__logo">
+                                    <img
+                                     class="footer-links__img"
+                                     src="./img/logo/Youtube-logo.svg" 
+                                     alt="Youtube's logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>    
+                    <li class="footer-links__item">    
+                        <ul class="footer-links__copiright footer-copyright flex-x">
+                            <li class="footer-copyright__item">
+                                RU <!-- not finished -->
+                            </li>
+                            <li class="footer-copyright__item">
+                                © 2023 <span lang="en">Miro</span>
+                            </li>
+                            <li class="footer-copyright__item">
+                                <a href="#" class="footer-copyright__link footer-nav__link nav-link">
+                                    Условия пользования
+                                </a>
+                            </li>
+                            <li class="footer-copyright__item">
+                                <a href="#" class="footer-copyright__link footer-nav__link nav-link">
+                                    Политика конфиденциальности
+                                </a>
+                                
+                            </li>
+                            <li class="footer-copyright__item">
+                                <a href="#" class="footer-copyright__link footer-nav__link nav-link">
+                                    Управление файлами cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__download footer-download flex-x">
+                <li class="footer-download__item">
+                    <a href="#" class="footer-download__button">
+                        <img
+                         class="footer-download__img" 
+                         src="./img/logo/app-store-icon.svg" 
+                         alt="App Store icon">
+                    </a>
+                </li>
+                <li class="footer-download__item">
+                    <a href="#" class="footer-download__button">
+                        <img
+                         class="footer-download__img" 
+                         src="./img/logo/google-play-icon.svg" 
+                         alt="Google Play icon">
+                    </a>
+                </li>
+                <li class="footer-download__item">
+                    <a href="#" class="footer-download__button">
+                        <img
+                         class="footer-download__img" 
+                         src="./img/logo/miro-app-icon.svg" 
+                         alt="Miro app icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
